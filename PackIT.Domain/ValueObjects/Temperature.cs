@@ -15,6 +15,6 @@ public record Temperature
 
     public static implicit operator double(Temperature temperature)
         => temperature.Value;
-    public static implicit operator Temperature(ushort name)
+    public static implicit operator Temperature(double name)
         => new(name);
 }
